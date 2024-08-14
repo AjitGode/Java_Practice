@@ -13,7 +13,7 @@ public class incDec {
 
         int x=70;
         int y=--x;
-        System.out.println("After post decrement :"+x);
+        System.out.println("After pre decrement :"+x);
 
         int z=x--;
         System.out.println("After post decrement :"+z);
