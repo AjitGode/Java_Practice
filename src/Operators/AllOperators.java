@@ -1,5 +1,23 @@
 package Operators;
 
+class Animala{
+    public void sound(){
+        System.out.println("Some generic animal sound");
+    }
+}
+
+class Dogd extends Animala{
+    public void sound(){
+        System.out.println("Bark");
+    }
+}
+
+class Catc extends Animala{
+    public void sound(){
+        System.out.println("Meow");
+    }
+}
+
 public class AllOperators {
     public static void main(String[] args) {
 
@@ -81,6 +99,44 @@ public class AllOperators {
         System.out.println(k.concat(l));
 
         // instanceof Operator :
+
+          Animala M = new Animala();
+          Dogd D = new Dogd();
+          Catc C = new Catc();
+
+          System.out.println("M is an instance of Animala :"+(M instanceof Animala));
+          System.out.println("D is an instance of Animala :"+(D instanceof Animala));
+          System.out.println("C is an instanceof Animala "+(C instanceof Animala));
+
+          // Bitwise operators :
+
+          int h= 5;  //00000101
+          int j = 3; //00000011
+
+          System.out.println(h & j);
+          System.out.println(h ^ j);
+          System.out.println(h | j);
+          System.out.println(~h);
+
+          // Short Circuit Operator :
+
+        int t = 5;
+        int r = 10;
+
+
+        if(t > 10 && r > 10) {
+            System.out.println("Both conditions are true");
+        } else {
+            System.out.println("At least one condition is false");
+        }
+
+
+        if(t > 10 || r > 10) {
+            System.out.println("At least one condition is true");
+        } else {
+            System.out.println("Both conditions are false");
+        }
+
 
 
     }
